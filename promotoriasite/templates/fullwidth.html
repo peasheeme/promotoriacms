@@ -1,0 +1,1354 @@
+{% extends "base.html" %}
+{% load cms_tags static %}
+
+{% block title %}{% page_attribute "page_title" %}{% endblock title %}
+
+{% block content %}
+	{% placeholder "content" %}
+	<SECTION id="INICIO">
+
+			<!--/Carousel-->
+
+			<div id="carouselExampleIndicators" class="carousel slide "  data-ride="carousel">
+		<ol class="carousel-indicators">
+		<li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+		<li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+		<li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+		</ol>
+		<div class="carousel-inner">
+		<div class="carousel-item active">
+		 <img class="d-block w-100" src="{% static "images/1.jpg" %}" alt="First slide" >
+		 <div class="carousel-caption d-none d-md-block">
+		<h3>#SoyPromotoria</h3>
+		<p>Chihuahua Chih. Mx</p>
+		</div>
+		</div>
+		<div class="carousel-item">
+		 <img class="d-block w-100" src="{% static "images/2.jpg" %}"  alt="Second slide" width="1032" height="406">
+		 </div>
+		<div class="carousel-item">
+		 <img class="d-block w-100" src="{% static "images/3.jpg" %}" alt="Third slide">
+		 <div class="carousel-caption d-none d-md-block">
+		 <h3>Promotoria Social</h3>
+		<p>Personas con discapacidad, A.C.</p>
+		</div>
+		</div>
+		</div>
+		<a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+		<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+		<span class="sr-only">Previous</span>
+		</a>
+		<a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+		<span class="carousel-control-next-icon" aria-hidden="true"></span>
+		<span class="sr-only">Next</span>
+		</a>
+		</div>
+
+	 </SECTION>
+
+
+
+</SECTION>
+     <br><br><br><br>
+     <section id="SERVICIOS" class="section-header">
+          <div class="color-overlay">
+
+        <div class="container">
+
+          <div class="row">
+
+            <div class="col-sm-12 wow bounceInDown">
+              <h2>SERVICIOS</h2>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+        </section>
+        <section class="section">
+
+      <div class="container">
+
+        <div class="row">
+
+          <div class="col-sm-4 wow bounceInLeft">
+            <div class="service">
+              <div class="icon">
+
+              <img src="{% static "images/icon/1.png"%}">
+              </div>
+              <h4><a href="#" data-toggle="modal" data-target="#Servicio1" ><strong>Ajedrez Maya</strong></a > </h4>
+              <div class="text">
+                <p>I am alone, and feel the charm of existence in this spot, which was created for the bliss of souls like mine.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm-4 wow bounceInUp">
+            <div class="service">
+              <div class="icon">
+               <img src= "{% static "images/icon/2.png"%}">
+              </div>
+
+              <h4><a href="#" data-toggle="modal" data-target="#Servicio2" ><strong>Reciclado de plastico.</strong></a></h4>
+              <div class="text">
+                <p>I am alone, and feel the charm of existence in this spot, which was created for the bliss of souls like mine.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm-4 wow bounceInRight">
+            <div class="service">
+              <div class="icon">
+                <img src= "{% static "images/icon/3.png" %}">
+              </div>
+              <h4> <a href="#" data-toggle="modal" data-target="#Servicio3" ><strong>Etiquetado y empaquetado</strong></a>
+                </h4>
+              <div class="text">
+                <p>I am alone, and feel the charm of existence in this spot, which was created for the bliss of souls like mine.</p>
+              </div>
+            </div>
+          </div>
+
+        </div><!-- .row -->
+
+        <div class="clearfix"></div>
+
+        <div class="row">
+
+          <div class="col-sm-4 wow bounceInUp" data-wow-delay=".2s">
+            <div class="service">
+              <div class="icon">
+                <img src= "{% static "images/icon/4.png"%}">
+              </div>
+              <h4><a href="#" data-toggle="modal" data-target="#Servicio4" ><strong>Servicio de mano de obra</strong></a></h4>
+              <div class="text">
+                <p>I am alone, and feel the charm of existence in this spot, which was created for the bliss of souls like mine.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm-4 wow bounceInUp" data-wow-delay=".4s">
+            <div class="service">
+              <div class="icon">
+               <img src="{% static "images/icon/5.png"%}">
+              </div>
+              <h4><a href="#" data-toggle="modal" data-target="#Servicio5" ><strong>Repracion y mantenimiento</strong></a></h4>
+              <div class="text">
+                <p>I am alone, and feel the charm of existence in this spot, which was created for the bliss of souls like mine.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm-4 wow bounceInUp" data-wow-delay=".6s">
+            <div class="service">
+              <img src= "{% static "images/icon/6.png"%}">
+              </div>
+              <h4><a href="#" data-toggle="modal" data-target="#Servicio6" ><strong>Limpieza de materiales</strong></a></h4>
+              <div class="text">
+                <p>I am alone, and feel the charm of existence in this spot, which was created for the bliss of souls like mine.</p>
+              </div>
+            </div>
+          </div>
+
+        </div><!-- .row -->
+
+      </div><!-- .container -->
+
+    </section>
+
+
+		<section id="NOTICIAS" class="section-header">
+
+      <div class="color-overlay">
+
+        <div class="container">
+
+          <div class="row">
+
+            <div class="col-sm-12 wow bounceInDown">
+              <h2>NOTICIAS</h2>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+        <!--Section2-->
+        <section class="section">
+          <div class="container">
+
+          <div class="row">
+
+           <div class="col-sm-3 wow bounceInLeft">
+            <div class="card" >
+          <img class="card-img-top" src="{% static "images/CAMP.jpg" %}" alt="Card image cap">
+         <div class="card-body">
+          <h6>15 Diciembre 2017</h6>
+          <h4> <a href="#">DARA INICIO A LA CAMPAÑA DEL MEDIO AMBIENTE</a></h4>
+          <h5 class="card-text">
+          I am alone, and feel the charm of existence in this spot, which was created for the bliss of souls like mine.
+         I am alone, and feel the charm of existence in this spot, which was created for the bliss of souls like mine.</h5>
+
+         <div class="button">
+          <button type="button" class="btn btn-info btn-sm">Seguir leyendo</button>
+        </div>
+        </div>
+          </div>
+          </div>
+          <div class="col-sm-3 wow bounceInLeft">
+            <div class="card" >
+          <img class="card-img-top" src= "{% static "images/EMP.jpg" %}" alt="Card image cap">
+         <div class="card-body">
+          <h6>28 Diciembre 2017</h6><h4>
+         <a href="#">SE ABRIRAN NUEVOS EMPLEOS PARA DISCAPACITADOS</a></h4>
+          <h5 class="card-text">
+          I am alone, and feel the charm of existence in this spot, which was created for the bliss of souls like mine.
+         I am alone, and feel the charm of existence in this spot, which was created for the bliss of souls like mine.</h5>
+          <div class="button">
+            <button type="button" class="btn btn-info btn-sm">Seguir leyendo</button>
+          </DIV>
+        </div>
+          </div>
+          </div>
+          <div class="col-sm-3 wow bounceInLeft">
+            <div class="card" >
+          <img class="card-img-top" src=" {% static "images/4.jpg" %}" alt="Card image cap">
+         <div class="card-body">
+          <h6>01 ENERO 2018</h6>
+          <h4><a href="#">INICIARA EL AÑO CON DONACION DE SILLAS DE RUEDAS</a></h4>
+          <h5 class="card-text">
+
+          I am alone, and feel the charm of existence in this spot, which was created for the bliss of souls like mine.
+         I am alone, and feel the charm of existence in this spot, which was created for the bliss of souls like mine.</h5>
+          <div class="button">
+             <button type="button" class="btn btn-info btn-sm">Seguir leyendo</button>
+          </DIV>
+        </div>
+          </div>
+          </div>
+          <div class="col-sm-3 wow bounceInLeft">
+            <div class="card" >
+          <img class="card-img-top" src= "{% static "images/EMP.jpg" %}" alt="Card image cap">
+         <div class="card-body">
+          <h6>28 Diciembre 2017</h6><h4>
+         <a href="#">SE ABRIRAN NUEVOS EMPLEOS PARA DISCAPACITADOS</a></h4>
+          <h5 class="card-text">
+          I am alone, and feel the charm of existence in this spot, which was created for the bliss of souls like mine.
+         I am alone, and feel the charm of existence in this spot, which was created for the bliss of souls like mine.</h5>
+          <div class="button">
+            <button type="button" class="btn btn-info btn-sm">Seguir leyendo</button>
+          </DIV>
+        </div>
+          </div>
+          </div>
+        </div>
+         </div>
+
+           <center>
+  <ul class="pagination">
+    <li class="page-item"><a class="page-link" href="#">Previo</a></li>
+    <li class="page-item"><a class="page-link" href="#">1</a></li>
+    <li class="page-item"><a class="page-link" href="#">2</a></li>
+    <li class="page-item"><a class="page-link" href="#">3</a></li>
+    <li class="page-item"><a class="page-link" href="#">Siguiente</a></li>
+  </ul></center>
+
+           <!-- <div class="button"><br>
+             <button type="button" class="btn btn-outline-primary">LEER MAS</button>
+          </DIV> -->
+
+
+        </section>
+
+				<section id="GALERIA" class="section-header">
+          <div class="color-overlay">
+
+        <div class="container">
+
+          <div class="row">
+
+            <div class="col-sm-12 wow bounceInDown">
+              <h2>GALERIA</h2>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+        </section>
+
+
+    <section  class="section">
+
+      <div class="container">
+
+        <div class="row">
+
+          <div class="row">
+            <div class="col-md-4 col-sm-6 wow bounceInUp" data-wow-delay=".6s">
+            <a href= " {% static "images/img/6.jpg" %}" class="pop-up" title="Caption 6">
+              <div class="portfolio-item">
+                <div class="portfolio-item-preview">
+                  <img src= " {% static "images/img/6.jpg"%}" alt="">
+                </div>
+                <div class="portfolio-item-description">
+                  <h3>VENTA</h3>
+                  <p>Ajedrez Maya</p>
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <div class="col-md-4 col-sm-6 wow bounceInLeft">
+            <a href= " {% static "images/img/13.jpg" %}"class="pop-up" title="Caption 1" >
+              <div class="portfolio-item">
+                <div class="portfolio-item-preview">
+                  <img src= " {% static "images/img/13.jpg" %}" alt="">
+                </div>
+                <div class="portfolio-item-description">
+                  <h3>Servicio</h3>
+                  <p>Reciclado de plastico.</p>
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <div class="col-md-4 col-sm-6 wow bounceInUp">
+            <a href= " {% static "images/img/2.jpg"%}" class="video-pop-up" title="Caption 2">
+              <div class="portfolio-item">
+                <div class="portfolio-item-preview">
+                  <img src= " {% static "images/img/2.jpg" %}" alt="">
+                </div>
+                <div class="portfolio-item-description">
+                  <h3>Servicio</h3>
+                  <p>Etiquetado y Empaquetado</p>
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <div class="col-md-4 col-sm-6 wow bounceInUp" data-wow-delay=".2s">
+            <a href=" {% static "images/img/12.jpg" %}" class="pop-up" title="Caption 4">
+              <div class="portfolio-item">
+                <div class="portfolio-item-preview">
+                  <img src=" {% static "images/img/12.jpg" %}" alt="">
+                </div>
+                <div class="portfolio-item-description">
+                  <h3>Servicio</h3>
+                  <p>Mano de obra</p>
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <div class="col-md-4 col-sm-6 wow bounceInUp" data-wow-delay=".4s">
+            <a href=" {% static "images/img/5.jpg" %}" class="pop-up" title="Caption 5">
+              <div class="portfolio-item">
+                <div class="portfolio-item-preview">
+                  <img src=" {% static "images/img/5.jpg" %}" alt="">
+                </div>
+                <div class="portfolio-item-description">
+                  <h3>Servicio</h3>
+                  <p>Reparación y Mantenimiento</p>
+                </div>
+              </div>
+            </a>
+          </div>
+
+
+
+
+          <div class="col-md-4 col-sm-6 wow bounceInRight">
+            <a href=" {% static "images/img/3.jpg" %}" class="pop-up" title="Caption 3">
+              <div class="portfolio-item">
+                <div class="portfolio-item-preview">
+                  <img src=" {% static "images/img/3.jpg" %}" alt="">
+                </div>
+                <div class="portfolio-item-description">
+                  <h3>Servicio</h3>
+                  <p>Limpieza de Materiales</p>
+                </div>
+              </div>
+            </a>
+          </div>
+
+        </div><!-- .row -->
+
+      </div><!-- .container -->
+
+    </section>
+
+
+		<section id="DONAR" class="section-header">
+				<div class="color-overlay">
+
+			<div class="container">
+
+				<div class="row">
+
+					<div class="col-sm-12 wow bounceInDown">
+						<h2>HAZ TU DONATIVO AQUÍ</h2>
+
+					</div>
+
+				</div>
+
+			</div>
+
+		</div>
+
+			</section>
+
+<section  class="section">
+
+
+				<!--<h2>BIENVENIDOS</h2>
+
+
+				<div class="arbol">
+					<img src="images/icon/arbol.png">
+				</div>-->
+				<div class="container">
+				<div class="row">
+			<!--<div class="col-sm-2 wow bounceInLeft ">
+
+</div>-->
+			<div class="col-sm-10  wow bounceInUp">
+
+				<div class="jumbotron">
+
+
+
+					<center><img src= " {% static "images/icon/donar.png" %}" ></center>
+					 <div class="text">
+						 <p><h5><center> Agradecemos tu participación como donador, puedes seleccionar cualquiera de nuestras opciones y formar parte de esta gran causa.</center> </h5></p>
+					</div>
+
+					<hr class="my-4">
+
+					<button type="button" class="btn btn-outline-success btn-lg" data-toggle="modal" data-target="#miModal5">    <img src= "{% static "images/icon/cheque.png" %}" >
+						<br>Deposito en Cheque</button>
+
+
+<button type="button" class="btn btn-outline-info btn-lg" href="#" data-toggle="modal" data-target="#miModal6"><img src= "{% static "images/icon/tarjeta.png" %}" ><br>Transferencia Electronica</button>
+<button type="button" class="btn btn-outline-warning btn-lg" href="#" data-toggle="modal" data-target="#miModal7"><img src= "{% static "images/icon/deposito.png" %}" ><br>Deposito en efectivo</button>
+
+<button type="button" class="btn btn-outline-primary btn-lg" href="#" data-toggle="modal" data-target="#miModal8"><img src= "{% static "images/icon/paypal.png" %}" ><br>PayPal</button>
+
+					<center><button type="button" class=" btn-outline-dark btn-lg" href="#" data-toggle="modal" data-target="#miModal9">Solicitar comprobante fiscal. </button></center>
+					<div class="text">
+						 <p><h4><center> ¡No mires Discapacidades, aprovecha Capacidades !</center>
+</h4></p>
+				</div>
+
+			</div> </div>
+
+		<div class="col-sm-2 wow bounceInRight DONAR">
+			<nav class="nav flex-column">
+
+<a class="nav-link active"  href="#" data-toggle="modal" data-target="#miModal12">Afiliaciones</a>
+<a class="nav-link" href="#" data-toggle="modal" data-target="#miModal12">Proyectos</a>
+<a class="nav-link" href="#" data-toggle="modal" data-target="#miModal10">Ventajas al contratar nuestros servicios.</a>
+<a class="nav-link" href="#" data-toggle="modal" data-target="#miModal13"> Vinculaciones</a>
+<a class="nav-link" href="https://www.facebook.com/Promotor%C3%ADa-Social-Personas-Con-Discapacidad-AC-499786263735891/" >Tienda en linea</a>
+<center><a href="https://www.facebook.com/Promotor%C3%ADa-Social-Personas-Con-Discapacidad-AC-499786263735891/"> <img src=" {% static "images/icon/tienda.png" %}">
+ </a></center>
+
+
+<div class="card-body">
+
+	<h6 class="card-subtitle mb-2 text-muted">¿CÓMO APORTAR?</h6>
+	<p class="card-text">Recibimos donativos economicos</p>
+	<h6 class="card-subtitle mb-2 text-muted">DONATIVOS EN ESPECIE:</h6>
+	<p class="card-text">Metales, plástico, tarimas de madera, cartón, despensas alimenticias, ortopédicos, etc.</p>
+ <center><img src=" {% static "images/icon/donativo.png" %}"></center>
+
+</div>
+
+
+<!--<a class="nav-link disabled" href="#">Disabled</a>-->
+</nav>
+				</div>
+
+</div>
+
+	 </section>
+
+
+	 <section id="CONTACTO" class="section-header">
+          <div class="color-overlay">
+
+        <div class="container">
+
+          <div class="row">
+
+            <div class="col-sm-12 wow bounceInDown">
+              <h2>CONTACTANOS</h2>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+        </section>
+
+
+<section class="section">
+
+      <div class="container">
+
+        <div class="row">
+          <div class="col-md-6 wow bounceInUp ali">
+            <h4><strong>TELEFONO</strong></h4>
+            <div class="icon">
+               <i class="fa fa-phone" aria-hidden="true"></i>
+               <a href="tel:+526144331021">+(52)614-433-1021</a>
+                <hr/>
+            </div>
+            <h4><strong>E-MAIL</strong></h4>
+
+             <div class="icon">
+              <i class="fa fa-envelope-o" aria-hidden="true"></i>
+                <a href="mailto:promotoria.social@gmail.com">promotoria.social@gmail.com</a></a>
+
+                  <hr/>
+            </div>
+            <h4><strong>DIRECCION</strong></h4>
+             <div class="icon">
+              <i class="fa fa-map-marker" aria-hidden="true"></i>
+              Calle Ignacio Ramírez No. 4611 <br>Col. Pacífico, Chihuahua, Chih.
+            </a>
+            </div>
+            <hr/>
+
+            <h4><strong>SIGUENOS</strong></h4>
+
+              <a href="https://www.facebook.com/PromotoriaSocialPublicidad/"><img src= " {% static "images/icon/face.png" %}" ></a>
+              <a href="#"><img src= " {% static "images/icon/insta.png" %} "></a>
+              <a href="#"><img src= " {% static "images/icon/twitter.png" %} "></a>
+              <a href="#"><img src= " {% static "images/icon/tmbl.png" %} "></i></a>
+              <a href="#"><img src= " {% static "images/icon/pint.png" %} "></i></a>
+
+
+          </div><!-- .col -->
+
+
+          <div class="col-md-6 wow bounceInLeft">
+
+            <h4><STRONG> TU OPINION ES IMPORTANTE</STRONG></h4>
+            <form id="contact-form" method="post" role="form">
+
+              <div class="ajax-hidden">
+
+                <div class="form-group">
+                  <label class="sr-only" for="c_name">Nombre</label>
+                  <input type="text" id="c_name" class="form-control" name="c_name" placeholder="Nombre">
+                </div>
+
+                <div class="form-group">
+                  <label class="sr-only" for="c_email">E-mail</label>
+                  <input type="email" id="c_email" class="form-control" name="c_email" placeholder="E-mail">
+                </div>
+
+                <div class="form-group">
+                  <textarea class="form-control" id="c_message" name="c_message" rows="7" placeholder="Escribe un mensaje"></textarea>
+                </div>
+
+                <button type="submit" class="btn btn-custom-1-inverse">
+                  <i class="fa fa-bullhorn icon-before"></i> Enviar
+                </button>
+
+              </div>
+
+              <div class="ajax-response"></div><!-- Displays status when submitting form -->
+
+            </form>
+
+          </div><!-- .col -->
+
+
+        </div><!-- .row -->
+
+      </div><!-- .container -->
+
+    </section>
+
+		<section id="MAPA">
+
+      <div  class="wow flipInX">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7004.943374153704!2d-106.08806711855874!3d28.61562201103532!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x86ea5cbbb90fb953%3A0xd830aa4642233c6b!2sCalle+Ignacio+Ram%C3%ADrez+4611%2C+Pac%C3%ADfico%2C+31020+Chihuahua%2C+Chih.!5e0!3m2!1ses-419!2smx!4v1513305240794" width="100%" height="500" frameborder="0" style="border:0" allowfullscreen></iframe>
+      </div>
+
+    </section>
+<footer id="footer">
+
+      <div class="container">
+
+        <div class="row">
+
+          <div class="col-md-12">
+            <p class="copy">
+              © 2017 Promotoria social personas con discapacidad, A .C.Todos los derechos reservados.
+            </p>
+          </div>
+
+        </div><!-- .row -->
+
+      </div><!-- .container -->
+
+    </footer>
+
+
+		<div class="modal fade" id="miModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                        <div class="modal-dialog" role="document">
+                          <div class="modal-content">
+                            <div class="modal-header-info">
+
+                              <h4 class="modal-title" id="myModalLabel">Origen</h4>
+                              <center><img src= " {% static "images/icon/logo.png" %}" ></center>
+                              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                              </button>
+                            </div>
+                            <div class="modal-body">
+                              La organización nace por iniciativa de un grupo de personas con discapacidad, en Mayo de 1998, la empresa Kay Plastics de México S. de R.L. de C.V. Nos dió la oportunidad de ser proveedores de mano de obra para uno de sus procesos requeridos, labor que continuamos a la fecha, en Septiembre del 2000 extendimos nuestros servicios de mano de obra a la empresa Magnetic Data de México S.A.  de  C.V. La experiencia obtenida como prestadores de servicio a éstas dos empresas nos permitió desarrollar un modelo de trabajo alternativo entre personas con discapacidad motriz, auditiva, visual e intelectual. A partir de Noviembre de 2001 operamos bajo una estructura formalmente constituida, dicha experiencia nos ha permitido conocer que el integrar a personas con diferentes discapacidades a nuestro modelo de trabajo, ha sido muy favorable para todos los participantes en conjunto; ya que encontramos que el complementar sus capacidades se traduce en un mayor desempeño y seguridad para desarrollar las actividades a realizar, tanto en lo individual como en lo social.
+                            </div>
+                            <div class="modal-footer">
+                              <button type="button" class="btn btn-info" data-dismiss="modal">Cerrar</button>
+
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+<div class="modal fade" id="miModal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                        <div class="modal-dialog" role="document">
+                          <div class="modal-content">
+                            <div class="modal-header-info">
+
+                              <h4 class="modal-title" id="myModal">Misión</h4>
+                              <center><img src= " {% static "images/icon/mision.png" %}" ></center>
+                              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                              </button>
+                            </div>
+                            <div class="modal-body">
+                              Ser una organización que impulse el bienestar y autosuficiencia de las personas con discapacidad y/o vulnerables del estado de Chihuahua, por medio del mejoramiento de sus habilidades laborales e integración al desarrollo económico y social a través de programas propios o en alianza con otras entidades.
+                            </div>
+                            <div class="modal-footer">
+                              <button type="button" class="btn btn-info" data-dismiss="modal">Cerrar</button>
+
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+
+<div class="modal fade" id="miModal3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                        <div class="modal-dialog" role="document">
+                          <div class="modal-content">
+                            <div class="modal-header-info">
+
+                              <h4 class="modal-title" id="myModal"><VAR>Visión para el año 2020</VAR></h4>
+                              <center><img src= " {% static "images/icon/vision.png" %}" ></center>
+                              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                              </button>
+                            </div>
+                            <div class="modal-body">
+                              Somos una asociación civil transparente con reconocimiento en el desarrollo productivo de personas con discapacidad y/o vulnerables.  Contamos con las instalaciones, equipamiento y recursos necesarios para operar efectivamente los programas y servicios de la organización en coparticipación con los sectores público, privado y social.
+                            </div>
+                            <div class="modal-footer">
+                              <button type="button" class="btn btn-info" data-dismiss="modal">Cerrar</button>
+
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+
+                       <div class="modal fade" id="miModal14" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                        <div class="modal-dialog" role="document">
+                          <div class="modal-content">
+                            <div class="modal-header-info">
+
+                              <h4 class="modal-title" id="myModal"><VAR>Objetivos globales.</VAR></h4>
+                              <center><img src= " {% static "images/icon/objetivo.png" %}" ></center>
+                              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                              </button>
+                            </div>
+                            <div class="modal-body">
+                              <ul>
+                                1. Capacitación permanente para el desarrollo profesional y productivo de nuestros beneficiarios y personal. <br>
+                             2.  Establecimiento de un programa continuo de difusión y visibilidad del trabajo de la organización. <br>
+                             3.  Fortalecimiento de los programas, procesos y servicios de la organización <br>
+                               4.  Desarrollo de proyectos productivos propios factibles.
+
+                              </ul>
+
+
+                            </div>
+                            <div class="modal-footer">
+                              <button type="button" class="btn btn-info" data-dismiss="modal">Cerrar</button>
+
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+
+     <div class="modal fade" id="miModal15" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                        <div class="modal-dialog" role="document">
+                          <div class="modal-content">
+                            <div class="modal-header-info">
+
+                              <h4 class="modal-title" id="myModal"><VAR>Valores</VAR></h4>
+                              <center><img src= " {% static "images/icon/logo.png" %}" ></center>
+                              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                              </button>
+                            </div>
+                            <p>Listado de Valores y sus respectivos comportamientos para el impulso hacia
+la Misión, la Visión y los Objetivos Globales
+
+</p>                            <div class="modal-body">
+                              <ol class="breadcrumb">
+                                <li class="breadcrumb-item active" aria-current="page"> Honestidad</li>
+                                </ol>
+                                <li>Congruencia con nuestras responsabilidades y tareas encomendadas.</li>
+                                <li>Hacer buen uso de los recursos disponibles.</li>
+                                <li>Actitud de servicio y disposición a ayudar a los demás</li>
+                                <br>
+                    <ol class="breadcrumb">
+                                <li class="breadcrumb-item active" aria-current="page"> Transparencia</li>
+                                </ol>
+                              <li>Medir y difundir nuestros resultados.</li>
+                                <li>Hablar con la verdad.</li>
+                                <br>
+                                <ol class="breadcrumb">
+                                <li class="breadcrumb-item active" aria-current="page"> Compromiso</li>
+                                </ol>
+                                <li>Disposición al trabajo y a las tareas asignadas.</li>
+                                <li>Dar más del 100%.</li>
+                                <li>Hacer las cosas con calidad.</li>
+                         <li>Mantener una imagen sana.</li>
+                         <br>
+                                <ol class="breadcrumb">
+                                <li class="breadcrumb-item active" aria-current="page"> Aprendizaje</li>
+                                </ol>
+                                <li>Disposición a desarrollarme y profesionalizarme.</li>
+                                <li>Mente abierta para aceptar los cambios.</li>
+                             <br>
+                                <ol class="breadcrumb">
+                                <li class="breadcrumb-item active" aria-current="page"> Trabajo en equipo</li>
+                                </ol>
+                                <li>Compartir ideas y experiencias.</li>
+                                <li>Respeto a los demás y a mí mismo.</li>
+                                <li>Empatía y complementariedad entre nosotros.</li>
+                                <br>
+                                <ol class="breadcrumb">
+                                <li class="breadcrumb-item active" aria-current="page"> Optimismo</li>
+                                </ol>
+                                <li>Hacer las cosas con entusiasmo.</li>
+                                <li>Buena actitud ante la vida.</li>
+
+                            </div>
+                            <div class="modal-footer">
+                              <button type="button" class="btn btn-info" data-dismiss="modal">Cerrar</button>
+
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+											<div class="modal fade" id="miModal4" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+											<div class="modal-dialog" role="document">
+												<div class="modal-content">
+													<div class="modal-header-info">
+
+														<h4 class="modal-title" id="myModal"><VAR>Beneficiarios:</VAR></h4>
+														<center><img src= " {% static "images/icon/beneficiarios.png" %}" ></center>
+
+														<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+															<span aria-hidden="true">&times;</span>
+														</button>
+													</div>
+													<div class="modal-body">
+														<nav aria-label="breadcrumb">
+																						<ol class="breadcrumb">
+																							<li class="breadcrumb-item active" aria-current="page"> Personas con discapacidad de 18 años en adelante:</li>
+																						</ol>
+																												<ul>
+														 <li>Física</li>
+														 <li>Visual</li>
+														 <li>Auditiva</li>
+														 <li>Mental (psicomental) </li>
+														 <li>Intelectual</li>
+														</ul>
+														<center><img src= " {% static "images/icon/fisica.png" %}" ><img src= " {% static "images/icon/visual.png" %}" ><img src=" {% static "images/icon/auditiva.png" %}">
+															<img src= " {% static "images/icon/mental.png" %}"><img src= " {% static "images/icon/intelectual.png" %}"></center>
+
+														<div class="modal-body">
+
+
+														Al adquirir nuestros servicios y productos se favorece la oportunidad de nuestros beneficiarios para integrarse a una actividad productiva que les permita cubrir sus necesidades básicas y la de sus familias, contribuyendo de esta manera a su autosuficiencia.
+
+													</div>
+													<div class="modal-footer">
+														<button type="button" class="btn btn-info" data-dismiss="modal">Cerrar</button>
+
+													</div>
+												</div>
+											</div>
+										</div> </div>
+						<div class="modal fade" id="miModal10" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+											<div class="modal-dialog" role="document">
+												<div class="modal-content">
+													<div class="modal-header-info">
+
+														<h4 class="modal-title" id="myModal"><VAR>Ventajas de Contratar nuestros servicios.</VAR></h4>
+														<center><img src= " {% static "images/icon/ventajas.png" %}" ></center>
+
+														<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+															<span aria-hidden="true">&times;</span>
+														</button>
+													</div>
+													<div class="modal-body">
+
+																<ul>
+														 <li>Se cumple con una responsabilidad social, personal calificado que mejora el ambiente laboral del de la empresa.</li>
+														 <li>Le da un valor agregado  ya que  sus productos y servicios están elaborados por personas con discapacidad.</li>
+														 <li>Le da proyección a la empresa.</li>
+														 <li>Beneficios de estímulos  fiscales.</li>
+
+														</ul>
+													</div>
+													<div class="modal-footer">
+														<button type="button" class="btn btn-info" data-dismiss="modal">Cerrar</button>
+
+													</div>
+												</div>
+											</div>
+										</div> </div>
+
+										<div class="modal fade" id="miModal11" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+											<div class="modal-dialog" role="document">
+												<div class="modal-content">
+													<div class="modal-header-info">
+
+														<h4 class="modal-title" id="myModal"><VAR>Proyectos</VAR></h4>
+														<center><img src= " {% static "images/icon/proyectos.png" %}" ></center>
+
+														<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+															<span aria-hidden="true">&times;</span>
+														</button>
+													</div>
+													<div class="modal-body">
+														<nav aria-label="breadcrumb">
+																						<ol class="breadcrumb">
+																							<li class="breadcrumb-item active" aria-current="page"> Personas con discapacidad de 18 años en adelante:</li>
+																						</ol>
+
+
+													</div>
+													<div class="modal-footer">
+														<button type="button" class="btn btn-info" data-dismiss="modal">Cerrar</button>
+
+													</div>
+												</div>
+											</div>
+										</div> </div>
+										<div class="modal fade" id="miModal12" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+											<div class="modal-dialog" role="document">
+												<div class="modal-content">
+													<div class="modal-header-info">
+
+														<h4 class="modal-title" id="myModal"><VAR>Afiliaciones</VAR></h4>
+                              <center><img src= " {% static "images/icon/afiliaciones.png" %}" ></center>
+
+                              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                              </button>
+                            </div>
+                            <div class="modal-body">
+                              <nav aria-label="breadcrumb">
+                                              <ol class="breadcrumb">
+                                                <li class="breadcrumb-item active" aria-current="page"> Red de Discapacidad
+                                                </li>
+                                              </ol>
+                             <ul>
+                              <img src= " {% static "images/icon/face.png" %}" ><a href="https://www.facebook.com/reddiscapacidadchihuahua/?fref=pb&hc_location=profile_browser"> /reddiscapacidadchihuahua</a> <br><br>
+                               <img src= " {% static "images/icon/twitter.png" %}" ><a href="https://twitter.com/reddiscapacidad?lang=es"> /reddiscapacidad</a> <br><br>
+                                <img src= " {% static "images/icon/blogspot.png" %}" ><a href="http://reddiscapacidadchih.blogspot.mx/"> reddiscapacidadchih</a>
+                                <br>
+                                <img src= " {% static "images/icon/red.jpg" %}" >
+                                  </ul>
+
+                                  <nav aria-label="breadcrumb">
+                                              <ol class="breadcrumb">
+                                                <li class="breadcrumb-item active" aria-current="page"> CFOSC. Centro de Fortalecimiento a Organizaciones de la Sociedad Civil.
+                                                </li>
+                                              </ol>
+                                              <ul>
+                                                </a><a href="http://www.fortalecimiento.org/" > Fortalecimiento.org/</a>
+                                                <img src= " {% static "images/icon/fortalecimiento.png" %}" whith="200" height="82">
+                                  </ul>
+                                              </ul>
+
+                            </div>
+                            <div class="modal-footer">
+                              <button type="button" class="btn btn-info" data-dismiss="modal">Cerrar</button>
+
+                            </div>
+                          </div>
+                        </div>
+                      </div> </div>
+
+                      <div class="modal fade" id="miModal13" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                        <div class="modal-dialog" role="document">
+                          <div class="modal-content">
+                            <div class="modal-header-info">
+
+                              <h4 class="modal-title" id="myModal"><VAR>Vinculaciones</VAR></h4>
+                              <center><img src= " {% static "images/icon/vinculacion.png" %}" ></center>
+
+                              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                              </button>
+                            </div>
+                            <div class="modal-body">
+                              <nav aria-label="breadcrumb">
+                                              <ol class="breadcrumb">
+                                                <li class="breadcrumb-item active" aria-current="page"> UTCH</li>
+                                              </ol>
+
+
+                                                <a href="http://www.utch.edu.mx/"> www.utch.edu.mx/</a>
+                                              <img src= " {% static "images/icon/utch.jpg" %}" >
+                                              <img src= " {% static "images/icon/utch2.jpg" %}" >
+
+
+                                           <nav aria-label="breadcrumb">
+                                              <ol class="breadcrumb">
+                                                <li class="breadcrumb-item active" aria-current="page">Tecnológico de Monterrey</li>
+                                              </ol>
+
+                                              <a href="http://www.chi.itesm.mx/"> www.chi.itesm.mx/</a>
+                                              <img src= " {% static "images/icon/tecmty.png" %}" > <br> <br>
+
+
+                                        <nav aria-label="breadcrumb">
+                                              <ol class="breadcrumb">
+                                                <li class="breadcrumb-item active" aria-current="page"> Gobierno del Estado de Chihuahua</li>
+                                              </ol>
+
+                                              <a href="http://www.chihuahua.gob.mx/"> www.chihuahua.gob.mx/</a>
+                                              <img src= " {% static "images/icon/gobchih.jpg" %}" > <br><br>
+                              <nav aria-label="breadcrumb">
+                                              <ol class="breadcrumb">
+                                                <li class="breadcrumb-item active" aria-current="page">Gobierno Municipal de Chihuahua.</li>
+                                              </ol>
+
+                                              <a href="http://www.chihuahua.gob.mx/"> www.municipiochihuahua.gob.mx/</a>
+                                              <img src= " {% static "images/icon/munichih.png" %}" > <br><br>
+
+                                               <nav aria-label="breadcrumb">
+                                              <ol class="breadcrumb">
+                                                <li class="breadcrumb-item active" aria-current="page">Comisión estatal de derechos Humanos Chihuahua.</li>
+                                              </ol>
+
+                                              <a href="http://www.cedhchihuahua.org.mx/portal/"> www.cedhchihuahua.org.mx/</a>
+                                              <img src= " {% static "images/icon/comision.jpg" %}" > <br><br>
+
+                                               <nav aria-label="breadcrumb">
+                                              <ol class="breadcrumb">
+                                                <li class="breadcrumb-item active" aria-current="page">CONADIS</li>
+                                              </ol>
+
+
+
+                                              <a href="https://www.gob.mx/conadis"> www.gob.mx/conadis/</a>
+                                              <img src= " {% static "images/icon/CONADIS.jpg" %}"> <br>
+                                               <img src= " {% static "images/icon/face.png" %}"><a href="https://www.facebook.com/CONADIS.CHIHUAHUA/?fref=pb&hc_location=profile_browser"> CONADIS Chihuahua</a> <br><br>
+
+                                               <nav aria-label="breadcrumb">
+                                              <ol class="breadcrumb">
+                                                <li class="breadcrumb-item active" aria-current="page">Fechac Fundación del Empresariado Chihuahuense, A.C.</li>
+                                              </ol>
+
+                                              <a href="http://www.fechac.org/web/index.php"> www.fechac.org/</a>
+                                              <img src= " {% static "images/icon/FECHAC.jpg" %}" >
+                            </div>
+                            <div class="modal-footer">
+                              <button type="button" class="btn btn-info" data-dismiss="modal">Cerrar</button>
+
+                            </div>
+                          </div>
+                        </div>
+                      </div> </div>
+
+
+											<!--MODALES DEE DONACION-->
+
+											<div class="modal fade" id="miModal5" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                        <div class="modal-dialog" role="document">
+                          <div class="modal-content">
+                            <div class="modal-header-success">
+
+                              <h4 class="modal-title" id="myModal"> <center>Haz tu donativo mediante depósito en cheque <br><img src=" {% static "images/icon/cheque.png" %}" ></center></h4>
+                              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                              </button>
+                            </div>
+                            <div class="modal-body-success"><br><center> Puede hacer su donativo mediante depósito en cheque a nuestra cuenta bancaria:</center>
+                              <br>
+                                  <center><nav aria-label="breadcrumb">
+                                              <ol class="breadcrumb">
+                                                <li class="breadcrumb-item active" aria-current="page">Banco:</li>
+                                              </ol>
+
+                                    <strong>Banamex</strong>
+                                    <nav aria-label="breadcrumb">
+                                              <ol class="breadcrumb">
+                                                <li class="breadcrumb-item active" aria-current="page">Nombre</li>
+                                              </ol>
+                                   <strong>Promotoria Social Personas con Discapacidad A.C</strong>
+                                    <nav aria-label="breadcrumb">
+                                              <ol class="breadcrumb">
+                                                <li class="breadcrumb-item active" aria-current="page">No de Cuenta:</li>
+                                              </ol>
+                                   <strong>0830 7684250</strong>
+                                 </center>
+                                   </div>
+                            <div class="modal-footer">
+                              <button type="button" class="btn btn-success" data-dismiss="modal">Cerrar</button>
+
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+
+                       <div class="modal fade" id="miModal6" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                        <div class="modal-dialog" role="document">
+                          <div class="modal-content">
+                            <div class="modal-header-info">
+
+                              <h4 class="modal-title" id="myModal"> <center>Haz tu donativo mediante transferencia bancaria <br><img src=" {% static "images/icon/tarjeta.png" %}" ></center></h4>
+                              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                              </button>
+                            </div>
+                            <div class="modal-body">
+                              Si desea hacer su donativo mediante Transferencia Electrónica Bancaria los datos son los siguientes.
+                                  <center>
+
+                                    <nav aria-label="breadcrumb">
+                                              <ol class="breadcrumb">
+                                                <li class="breadcrumb-item active" aria-current="page">Banco</li>
+                                              </ol>
+                                  </nav>
+
+                                    <strong>Banamex</strong>
+                                     <nav aria-label="breadcrumb">
+                                              <ol class="breadcrumb">
+                                                <li class="breadcrumb-item active" aria-current="page">Nombre</li>
+                                              </ol>
+                                    <strong>Promotoria Social Personas con Discapacidad A.C</strong>
+                                     <nav aria-label="breadcrumb">
+                                              <ol class="breadcrumb">
+                                                <li class="breadcrumb-item active" aria-current="page">Clabe</li>
+                                              </ol>
+                                   <strong>xxxx xxxx xxxx xxxx</strong>
+                                 </center>
+                                   </div>
+                            <div class="modal-footer">
+                              <button type="button" class="btn btn-info" data-dismiss="modal">Cerrar</button>
+
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+											<div class="modal fade" id="miModal7" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                        <div class="modal-dialog" role="document">
+                          <div class="modal-content">
+                            <div class="modal-header-warning">
+
+                              <h4 class="modal-title" id="myModal"> <center>Haz tu donativo mediante depósito en efectivo <br><img src= " {% static "images/icon/deposito.png" %}" ></center></h4>
+                              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                              </button>
+                            </div>
+                            <div class="modal-body"><br>
+                            <center>Puede hacer su donativo mediante depósito en efectivo a nuestra cuenta bancaria (las donaciones en efectivo solo serán recibidas mediante depósito bancario):</center> <br>
+                                  <center>
+                                    <nav aria-label="breadcrumb">
+                                              <ol class="breadcrumb">
+                                                <li class="breadcrumb-item active" aria-current="page">Banco:</li>
+                                              </ol>
+
+                                    <strong>Banamex</strong>
+                                    <nav aria-label="breadcrumb">
+                                              <ol class="breadcrumb">
+                                                <li class="breadcrumb-item active" aria-current="page">Nombre:</li>
+                                              </ol>
+                                   <strong>Promotoria Social Personas con Discapacidad A.C</strong>
+                                   <nav aria-label="breadcrumb">
+                                              <ol class="breadcrumb">
+                                                <li class="breadcrumb-item active" aria-current="page">No Cuenta:</li>
+                                              </ol>
+                                   <strong>0830 7684250</strong>
+                                 </center>
+                                   </div>
+                            <div class="modal-footer">
+                              <button type="button" class="btn btn-warning" data-dismiss="modal">Cerrar</button>
+
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+ <div class="modal fade" id="miModal8" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                        <div class="modal-dialog" role="document">
+                          <div class="modal-content">
+                            <div class="modal-header-primary">
+
+                              <h4 class="modal-title" id="myModal"> <center>Haz tu donativo mediante PayPal<br><img src= " {% static "images/icon/paypal.png" %}" ></center></h4>
+                              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                              </button>
+                            </div>
+                           <div class="modal-body">
+                             En caso de que usted cuente con una cuenta PayPal y desee hacernos llegar su donativo por este medio, solo debe hacer clic en el siguiente botón.
+                             <br><br><!--<br>
+                             <h4>Quiero hacer una donación de:</h4>
+                             <form>
+                               <label class="radio-inline">
+                                  <input type="radio" name="optradio">$100
+                                </label>
+                                <label class="radio-inline">
+                                  <input type="radio" name="optradio">$200
+                                </label>
+                                <label class="radio-inline">
+                                  <input type="radio" name="optradio">$300
+                                 </label>
+                                 <label class="radio-inline">
+                                  <input type="radio" name="optradio">$400
+                                </label>
+                                <label class="radio-inline">
+                                  <input type="radio" name="optradio">$500
+                                 </label>
+                              </form>
+
+                              <br>
+                                <h4>Tus datos:</h4>
+                                <form>
+                            <div class="form-row">
+                              <div class="col">
+                                <input type="text" class="form-control" placeholder="First name">
+                              </div>
+                              <div class="col">
+                                <input type="text" class="form-control" placeholder="Last name">
+                              </div>
+                            </div>
+                          </form>
+                           </select>
+
+-->
+                             <CENTER><button type="button" class="btn btn-warning" data-dismiss="modal">DONAR</button></CENTER>
+                                   </div>
+                            <div class="modal-footer">
+                              <button type="button" class="btn btn-primary" data-dismiss="modal">Cerrar</button>
+
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="modal fade" id="miModal9" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                        <div class="modal-dialog" role="document">
+                          <div class="modal-content">
+                            <div class="modal-header-primary">
+
+                              <h4 class="modal-title" id="myModal"> <center>Solicitar Recibo deducible de impuestos<br></center></h4>
+                              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                              </button>
+                            </div>
+                            <div class="modal-body">
+                             Para solicitar tu recibo deducible primero debes ingresar tu correo electronico
+                             <br><br>
+ <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="escribir email">
+                            <br> <CENTER><button type="button" class="btn btn-info" data-dismiss="modal">Solicitar mi recibo</button></CENTER><br>
+                                   </div>
+                            <div class="modal-footer">
+                              <button type="button" class="btn btn-primary" data-dismiss="modal">Cerrar</button>
+
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+  <!-- MODAL DE SERVICIOS-->
+                      <div class="modal fade" id="Servicio1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                        <div class="modal-dialog" role="document">
+                          <div class="modal-content">
+                            <div class="modal-header-primary">
+
+                              <h4 class="modal-title" id="myModalLabel">Ajedrez Maya</h4>
+                              <center><img src= " {% static "images/icon/1.png" %}" ></center>
+                              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                              </button>
+                            </div>
+                            <div class="modal-body">
+                              La organización nace por iniciativa de un grupo de personas con discapacidad, en Mayo de 1998, la empresa Kay Plastics de México S. de R.L. de C.V. Nos dió la oportunidad de ser proveedores de mano de obra para uno de sus procesos requeridos, labor que continuamos a la fecha, en Septiembre del 2000 extendimos nuestros servicios de mano de obra a la empresa Magnetic Data de México S.A.  de  C.V. La experiencia obtenida como prestadores de servicio a éstas dos empresas nos permitió desarrollar un modelo de trabajo alternativo entre personas con discapacidad motriz, auditiva, visual e intelectual.
+                            </div>
+                            <div class="modal-footer">
+                              <button type="button" class="btn btn-primary" data-dismiss="modal">Cerrar</button>
+
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+
+                       <div class="modal fade" id="Servicio2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                        <div class="modal-dialog" role="document">
+                          <div class="modal-content">
+                            <div class="modal-header-primary">
+
+                              <h4 class="modal-title" id="myModalLabel">Reciclado de Plastico.</h4>
+                              <center><img src= " {% static "images/icon/2.png" %}" ></center>
+                              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                              </button>
+                            </div>
+                            <div class="modal-body">
+                              La organización nace por iniciativa de un grupo de personas con discapacidad, en Mayo de 1998, la empresa Kay Plastics de México S. de R.L. de C.V. Nos dió la oportunidad de ser proveedores de mano de obra para uno de sus procesos requeridos, labor que continuamos a la fecha, en Septiembre del 2000 extendimos nuestros servicios de mano de obra a la empresa Magnetic Data de México S.A.  de  C.V. La experiencia obtenida como prestadores de servicio a éstas dos empresas nos permitió desarrollar un modelo de trabajo alternativo entre personas con discapacidad motriz, auditiva, visual e intelectual.
+                            </div>
+                            <div class="modal-footer">
+                              <button type="button" class="btn btn-primary" data-dismiss="modal">Cerrar</button>
+
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+											<div class="modal fade" id="Servicio3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                        <div class="modal-dialog" role="document">
+                          <div class="modal-content">
+                            <div class="modal-header-warning">
+
+                              <h4 class="modal-title" id="myModalLabel">Etiquetado y empaquetado.</h4>
+                              <center><img src=" {% static "images/icon/3.png" %}"></center>
+                              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                              </button>
+                            </div>
+                            <div class="modal-body">
+                              La organización nace por iniciativa de un grupo de personas con discapacidad, en Mayo de 1998, la empresa Kay Plastics de México S. de R.L. de C.V. Nos dió la oportunidad de ser proveedores de mano de obra para uno de sus procesos requeridos, labor que continuamos a la fecha, en Septiembre del 2000 extendimos nuestros servicios de mano de obra a la empresa Magnetic Data de México S.A.  de  C.V. La experiencia obtenida como prestadores de servicio a éstas dos empresas nos permitió desarrollar un modelo de trabajo alternativo entre personas con discapacidad motriz, auditiva, visual e intelectual.
+                            </div>
+                            <div class="modal-footer">
+                              <button type="button" class="btn btn-warning" data-dismiss="modal">Cerrar</button>
+
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                       <div class="modal fade" id="Servicio4" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                        <div class="modal-dialog" role="document">
+                          <div class="modal-content">
+                            <div class="modal-header-warning">
+
+                              <h4 class="modal-title" id="myModalLabel">Mano de obra.</h4>
+                              <center><img src=" {% static "images/icon/4.png" %}" ></center>
+                              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                              </button>
+                            </div>
+                            <div class="modal-body">
+                              La organización nace por iniciativa de un grupo de personas con discapacidad, en Mayo de 1998, la empresa Kay Plastics de México S. de R.L. de C.V. Nos dió la oportunidad de ser proveedores de mano de obra para uno de sus procesos requeridos, labor que continuamos a la fecha, en Septiembre del 2000 extendimos nuestros servicios de mano de obra a la empresa Magnetic Data de México S.A.  de  C.V. La experiencia obtenida como prestadores de servicio a éstas dos empresas nos permitió desarrollar un modelo de trabajo alternativo entre personas con discapacidad motriz, auditiva, visual e intelectual.
+                            </div>
+                            <div class="modal-footer">
+                              <button type="button" class="btn btn-warning" data-dismiss="modal">Cerrar</button>
+
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                       <div class="modal fade" id="Servicio5" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                        <div class="modal-dialog" role="document">
+                          <div class="modal-content">
+                            <div class="modal-header-danger">
+
+                              <h4 class="modal-title" id="myModalLabel">Reparacion y mantenimiento.</h4>
+                              <center><img src=" {% static "images/icon/5.png" %}" ></center>
+                              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                              </button>
+                            </div>
+                            <div class="modal-body">
+                              La organización nace por iniciativa de un grupo de personas con discapacidad, en Mayo de 1998, la empresa Kay Plastics de México S. de R.L. de C.V. Nos dió la oportunidad de ser proveedores de mano de obra para uno de sus procesos requeridos, labor que continuamos a la fecha, en Septiembre del 2000 extendimos nuestros servicios de mano de obra a la empresa Magnetic Data de México S.A.  de  C.V. La experiencia obtenida como prestadores de servicio a éstas dos empresas nos permitió desarrollar un modelo de trabajo alternativo entre personas con discapacidad motriz, auditiva, visual e intelectual.
+                            </div>
+                            <div class="modal-footer">
+                              <button type="button" class="btn btn-danger" data-dismiss="modal">Cerrar</button>
+
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                       <div class="modal fade" id="Servicio6" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                        <div class="modal-dialog" role="document">
+                          <div class="modal-content">
+                            <div class="modal-header-info">
+
+                              <h4 class="modal-title" id="myModalLabel">Limpieza de Materiales</h4>
+                              <center><img src=" {% static "images/icon/6.png" %}" ></center>
+                              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                              </button>
+                            </div>
+                            <div class="modal-body">
+                              La organización nace por iniciativa de un grupo de personas con discapacidad, en Mayo de 1998, la empresa Kay Plastics de México S. de R.L. de C.V. Nos dió la oportunidad de ser proveedores de mano de obra para uno de sus procesos requeridos, labor que continuamos a la fecha, en Septiembre del 2000 extendimos nuestros servicios de mano de obra a la empresa Magnetic Data de México S.A.  de  C.V. La experiencia obtenida como prestadores de servicio a éstas dos empresas nos permitió desarrollar un modelo de trabajo alternativo entre personas con discapacidad motriz, auditiva, visual e intelectual.
+                            </div>
+                            <div class="modal-footer">
+                              <button type="button" class="btn btn-info" data-dismiss="modal">Cerrar</button>
+
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+		{% endblock content %}
