@@ -4,7 +4,7 @@ body{
 font-family: 'Montserrat', sans-serif;
 	background: #fefefe;
 }
-	
+
 img {
 	max-width: 100%;
 	height: auto;
@@ -24,7 +24,7 @@ a:hover {
 	color: #999;
 }
 .DONAR{
-	color:  #1192a5; 
+	color:  #1192a5;
 }
 
 .section-header{
@@ -33,7 +33,7 @@ a:hover {
 }
 .justify-content-end{
 	padding: 30px;
-    
+
     font-size: 18px;
     padding-right: .7rem;
     padding-left: .7rem;
@@ -89,15 +89,15 @@ position: absolute;
     right: 80px;
     width: 250px;
     height: 70px;
-    
+
  }
 
 .container{
-	
+
 }
 .carousell{
 	 position: relative;
-  
+
    top:27px;
 }
 
@@ -220,7 +220,7 @@ a,
 .portfolio-item-preview {
 	position: relative;
 }
-/* ---------------------------------------------- 
+/* ----------------------------------------------
 .portfolio-item:hover .portfolio-item-preview {
 	-webkit-transform: scale(1.1) rotate(2deg);
 	   -moz-transform: scale(1.3) rotate(3deg);
@@ -249,7 +249,7 @@ a,
 
 .ali{
 	text-align: center;
-   
+
 }
 .card{
 	max-width: 100%;
@@ -377,3 +377,36 @@ a,
 }
 
 
+/* overlay at start */
+.mfp-fade.mfp-bg {
+  opacity: 0;
+
+  -webkit-transition: all 0.15s ease-out;
+  -moz-transition: all 0.15s ease-out;
+  transition: all 0.15s ease-out;
+}
+/* overlay animate in */
+.mfp-fade.mfp-bg.mfp-ready {
+  opacity: 0.8;
+}
+/* overlay animate out */
+.mfp-fade.mfp-bg.mfp-removing {
+  opacity: 0;
+}
+
+/* content at start */
+.mfp-fade.mfp-wrap .mfp-content {
+  opacity: 0;
+
+  -webkit-transition: all 0.15s ease-out;
+  -moz-transition: all 0.15s ease-out;
+  transition: all 0.15s ease-out;
+}
+/* content animate it */
+.mfp-fade.mfp-wrap.mfp-ready .mfp-content {
+  opacity: 1;
+}
+/* content animate out */
+.mfp-fade.mfp-wrap.mfp-removing .mfp-content {
+  opacity: 0;
+}

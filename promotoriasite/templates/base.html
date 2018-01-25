@@ -1,5 +1,7 @@
 {% load cms_tags menu_tags sekizai_tags static %}
 <!doctype html>
+
+
 <html>
     <head>
         <title>{% block title %}This is my new project home page{% endblock title %}</title>
@@ -11,6 +13,9 @@
         <link href="{% static "css/owl.theme.css" %}" rel="stylesheet">
         <link href="{% static "css/owl.carousel.css" %}" rel="stylesheet">
       <link href="https://fonts.googleapis.com/css?family=Montserrat|Questrial" rel="stylesheet">
+
+
+      <link rel="stylesheet" href="path/magnific-popup/magnific-popup.css">
 
         <!-- Magnific-popup lightbox -->
         <link href="{% static "css/magnific-popup.css" %}" rel="stylesheet">
@@ -40,7 +45,7 @@
 
       <div class="row">
        <div class="col-sm-4 wow bounceInUp">
-              <img src="{% static "images/logotipo/logoOficial.jpg" %}" id="logo" >
+            <a href="me deja usar magnific pop"><img src="{% static "images/logotipo/logoOficial.jpg" %}" id="logo" ></a>
            </div>
 
         <div class="col-sm-8 wow bounceInUp">
@@ -79,7 +84,7 @@
               </li>
 
               <li class="nav-item ">
-                 <a class="nav-link " href="#NOTICIAS">Noticias</a>
+                 <a class="nav-link " href="#NOTICIAS" >Noticias</a>
                </li>
              <li class="nav-item ">
                <a class="nav-link " href="#GALERIA">Galeria</a>
@@ -89,7 +94,7 @@
            </li>
 
            <li class="nav-item ">
-              <a class="nav-link " href="https://www.facebook.com/Promotor%C3%ADa-Social-Personas-Con-Discapacidad-AC-499786263735891/">Tienda</a>
+              <a class="nav-link " href=" https://www.facebook.com/Promotor%C3%ADa-Social-Personas-Con-Discapacidad-AC-499786263735891/">Tienda</a>
             </li>
            </li><li class="nav-item ">
              <a class="nav-link " href="#DONAR">Donar</a>
@@ -121,11 +126,57 @@
     <!-- Knob -->
     <script src="{% static "js/jquery.knob.min.js" %}"></script>
     <!-- Modal for portfolio -->
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="path/magnific-popup/jquery.magnific-popup.min.js"></script>
+
     <script src="{% static "js/jquery.magnific-popup.min.js" %}"></script>
+    <script src="{% static "js/jquery.magnific-popup.js" %}"></script>
+    <!--<script>
+    $.extend(true, $.magnificPopup.defaults, {
+
+      gallery: {
+        tPrev: 'Previous (Left arrow key)', // Alt text on left arrow
+        tNext: 'Next (Right arrow key)', // Alt text on right arrow
+        tCounter: '%curr% of %total%' // Markup for "1 of 7" counter
+      },
+      image: {
+        tError: '<a href="%url%">The image</a> could not be loaded.' // Error message when image could not be loaded
+      },
+      ajax: {
+        tError: '<a href="%url%">The content</a> could not be loaded.' // Error message when ajax request failed
+      }
+    });
+
+  </script>-->
+
+    <script>
+    
+
+
+		$(document).ready(function() {
+
+			$('.image-popup-vertical-fit').magnificPopup({
+
+				type: 'image',
+
+      				closeOnContentClick: true,
+              mainClass:  'mfp-fade',
+				image: {
+				  verticalFit: true,
+
+				}
+			});
+
+		});
+
+
+
+
+	</script>
     <!-- Text rotator -->
     <script src="{% static "js/jquery.simple-text-rotator.min.js" %}"></script>
     <!-- Waypoints -->
-    <script src="{% static "js/jquery.waypoints.j" %}s"></script>
+    <script src="{% static "js/jquery.waypoints.js" %}s"></script>
     <!-- WOW - Reveal Animations When You Scroll -->
     <script src="{% static "js/wow.min.js" %}"></script>
     <!-- Smooth scroll -->
