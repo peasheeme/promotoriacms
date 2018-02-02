@@ -573,9 +573,9 @@ colocación fuera de nuestra organización.</p>
             <h4><strong>SIGUENOS</strong></h4>
 
               <a href="https://www.facebook.com/PromotoriaSocialPublicidad/"><img src= " {% static "images/icon/facebook.png" %}" ></a>
-              <a href="#"><img src= " {% static "images/icon/instagram.png" %} "></a>
-              <a href="#"><img src= " {% static "images/icon/twiter.png" %} "></a>
-              <a href="#"><img src= " {% static "images/icon/tmbl.png" %} "></i></a>
+              <a href="https://www.instagram.com/promotoria.social.publicidad/"><img src= " {% static "images/icon/instagram.png" %} "></a>
+            <!--  <a href="#"><img src= " {% static "images/icon/twiter.png" %} "></a>
+               <a href="#"><img src= " {% static "images/icon/tmbl.png" %} "></i></a>-->
             <!--  <a href="#"><img src= " {% static "images/icon/pint.png" %} "></i></a>-->
 
 
@@ -647,7 +647,7 @@ colocación fuera de nuestra organización.</p>
 
     </footer>
 
-
+<!--MODALES-->
 		<div class="modal fade" id="miModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
                         <div class="modal-dialog" role="document">
                           <div class="modal-content">
@@ -1245,13 +1245,49 @@ colocación fuera de nuestra organización.</p>
                               </button>
                             </div>
                             <div class="modal-body">
-                             Para solicitar tu recibo deducible primero debes ingresar tu correo electronico
+                            Instrucciones para solicitar comprobante fiscal:
                              <br><br>
+														 <div class="wow bounceInLeft">
+
+														 	 <form  method="post" role="form">
+
+														 		<div class="ajax-hidden">
+																	<div class="row">
+																		<div class=" col-sm-6 form-group">
+															 				<label class="sr-only" for="c_name">Nombre</label>
+															 				<input type="text" id="c_name" class="form-control" name="c_name" placeholder="Nombre(s)">
+															 			</div>
+
+																		<div class="col-sm-6 form-group">
+															 				<label class="sr-only" for="c_lastname">Apellido</label>
+															 				<input type="text" id="c_name" class="form-control" name="c_name" placeholder="Apellido(s)">
+															 			</div>
+																	</div>
+
+														 			<div class="form-group">
+														 				<label class="sr-only" for="c_email">E-mail</label>
+														 				<input type="email" id="c_email" class="form-control" name="c_email" placeholder="E-mail">
+														 			</div>
+
+														 			<div class="form-group">
+														 				<textarea class="form-control" id="c_message" name="c_message" rows="7" placeholder="Escribe los datos solicitados en el instructivo"></textarea>
+														 			</div>
+
+														 			<br><CENTER><button type="submit" class="btn btn-info">
+														 				</i> Solicitar mi recibo
+														 			</button></CENTER><br>
+
+														 		</div>
+
+														 		<div class="ajax-response"></div><!-- Displays status when submitting form -->
+
+														 	</form>
+
+														 </div>
 
 
-  <!--MODAL DE SERVICIOS-->
- <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="escribir email">
-                            <br> <CENTER><button type="button" class="btn btn-info" data-dismiss="modal">Solicitar mi recibo</button></CENTER><br>
+
+
                                    </div>
                             <div class="modal-footer">
                               <button type="button" class="btn btn-primary" data-dismiss="modal">Cerrar</button>

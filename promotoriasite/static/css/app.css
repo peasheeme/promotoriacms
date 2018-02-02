@@ -419,3 +419,34 @@ a,
 .mfp-fade.mfp-wrap.mfp-removing .mfp-content {
   opacity: 0;
 }
+
+.scroll-up {
+	border-style: solid;
+	border-width: 0 0 48px 48px;
+	border-color: transparent transparent rgba(27, 18, 18, 0.6) transparent;
+	position: fixed;
+	display: none;
+	right: 0px;
+	bottom: 0px;
+	width: 0;
+	height: 0;
+	z-index: 999;
+	-webkit-transition: -webkit-transform 0.8s ease-in-out;
+		  -moz-transition: -moz-transform 0.8s ease-in-out;
+			  -o-transition: -o-transform 0.8s ease-in-out;
+					transition: transform 0.8s ease-in-out;
+}
+
+.scroll-up a {
+	position: relative;
+	display: inline-block;
+	padding: 22px;
+	bottom: 0px;
+	left: -44px;
+	font-size: 18px;
+	color: #FFF;
+}
+
+.scroll-up a:hover {
+	color: #90C695;
+}
